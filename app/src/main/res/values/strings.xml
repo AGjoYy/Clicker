@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AGame</string>
+    <string name="tap">TAP</string>
+    <string name="_0">0</string>
+    <string name="trainee">trainee</string>
+    <string name="double_cursor">double cursor</string>
+</resources>

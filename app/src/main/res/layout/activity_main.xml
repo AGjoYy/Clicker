@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <view class="com.example.agame.Click$clickButton"
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:text="@string/tap"
+            android:tag="1"/>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+<!--        <com.example.agame.text-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:text="@string/_0" />-->
+
+
+    </LinearLayout>
+    <view class="com.example.agame.Click$clickButton"
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="@string/trainee"
+        android:tag="2"
+        android:enabled="false"/>
+
+    <view class="com.example.agame.Click$clickButton"
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="@string/double_cursor"
+        android:tag="3"
+        android:enabled="false"/>
+
+</LinearLayout>
