@@ -4,4 +4,6 @@
     <string name="_0">0</string>
     <string name="trainee">trainee</string>
     <string name="double_cursor">double cursor</string>
+    <string name="save">save</string>
+    <string name="reset">reset</string>
 </resources>

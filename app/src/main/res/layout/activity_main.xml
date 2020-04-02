@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <view class="com.example.agame.Click$clickButton"
+        <view class="com.example.agame.TapButton$clickButton"
             android:id="@+id/button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -21,23 +21,23 @@
             android:tag="1"/>
 
         <TextView
-            android:id="@+id/text_view"
+            android:id="@+id/pointsTap"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:text="@string/_0"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:textSize="30sp"/>
 
-<!--        <com.example.agame.text-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:text="@string/_0" />-->
-
-
     </LinearLayout>
-    <view class="com.example.agame.Click$clickButton"
-        android:id="@+id/button1"
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.example.agame.TraineeButton
+        android:id="@+id/traineeButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:padding="40dp"
@@ -45,13 +45,47 @@
         android:tag="2"
         android:enabled="false"/>
 
-    <view class="com.example.agame.Click$clickButton"
-        android:id="@+id/button2"
+        <TextView
+            android:id="@+id/traineeCount"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.example.agame.DoubleClickerButton
+        android:id="@+id/doubleClickerButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:padding="40dp"
         android:text="@string/double_cursor"
         android:tag="3"
         android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/doubleClickerCount"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <com.example.agame.ResetButton
+        android:id="@+id/ResetButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="@string/reset"
+        android:tag="1"/>
 
 </LinearLayout>
